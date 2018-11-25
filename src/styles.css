@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+/*.header{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.header__item--center{
+    text-align: center;
+    grid-column: 2/3;
+}
+*/

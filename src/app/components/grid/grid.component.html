@@ -1,0 +1,7 @@
+<div class="" [style.background]="bgColor" (click)="onClick()" (contextmenu)="setFlag()">
+  <img src="assets/img/bomb.png" *ngIf="isMine && show">
+  <img src="assets/img/flag.png" *ngIf="showFlag">
+  <ng-container *ngIf="!isMine && show">
+    <span >{{minesArround}}</span>
+  </ng-container> 
+</div>

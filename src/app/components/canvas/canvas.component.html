@@ -1,0 +1,26 @@
+<div class="columns is-centered">
+  <div class="column is-half">
+    <div class="grids">
+      <div *ngFor="let y of _y; let i=index">
+        <app-grid *ngFor="let x of _x; let j=index"  [coords]="coords(j,i)"></app-grid>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="stop" *ngIf="win">
+  <span>
+    GANASTE!!
+  </span>
+  <button class="button" (click)="reset()">Reiniciar</button>
+</div>
+<div class="stop" *ngIf="lose">
+  <span>
+    Perdiste... :(
+  </span>
+  <button class="button" (click)="reset()">Reiniciar</button>
+</div>
+<div class="stop" *ngIf="loading">
+  <span>
+    Cargando...
+  </span>
+</div>
